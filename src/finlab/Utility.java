@@ -97,6 +97,24 @@ public class Utility {
         }
         System.out.print(result);
     }
+ }
+    /**
+     * Asks input from user, gets traversal and prints returned value
+     * or prints error message
+     *
+     * ALGORITHM
+     *  Declare new StringBuilder
+     *  Instantiate boolean as visited array
+     *  Create a new queue for traversal method
+     *  Enqueue visiteed node
+     *  While queue is not empty
+     *      visited vertex is equal to vertices index
+     *      append value to StringBuilder
+     *      For every adjacent vertex
+     *          if matrix index is not equal to 1 and not visited  by vertex
+     *          Enqueue vertices
+     *  Print value of returned traversal
+     */
 
     public void breadthTraversal
             (String startingVertex, Integer[][] matrix, List<String> vertices)
